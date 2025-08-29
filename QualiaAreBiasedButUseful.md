@@ -411,12 +411,6 @@ Engaging with competing theories clarifies the distinctive contribution of the c
 
 ---
 
-Great — I’ll keep the **two corollaries split** (7.1 contemplative practice, 7.2 FPPs in AI), but update them per the improvement plan. This becomes **Section 8** since Section 7 was the antagonists.
-
-Here’s the full section in Markdown:
-
----
-
 ## **8. Corollaries: Actionable Agendas**
 
 The philosophical re-framing of qualia as cultural artifacts has direct implications for both consciousness research and artificial intelligence. This section develops two corollaries: first, the use of **contemplative practice as a debiasing tool**, and second, the design of **functional phenomenological proxies (FPPs)** as an AI architecture principle.
