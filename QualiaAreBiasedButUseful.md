@@ -1,8 +1,3 @@
-CogSci/Phil.Mind editor problem... You are a reviewer for ArXiV's cognitive science / philosophy of mind. Submit a Referee Report for the following paper for novelty, content, valid references (are they hallucinations?), etc, make sure to deliver a publication verdict (Publish, Major revisions needed, Minor revisions needed, Reject), and propose actionable suggestions with references. Remember this is for ArXiV, with the intention to state a thesis and create debate, the paper will be further refined and focus for Cog.Sci. or Phil. of Mind journals later on. If changes are needed, balance length with content (what can be reduced/dropped vs. what is essential for improvement):
-
-
----
-
 # **Qualia as Cultural Artifacts: Genealogy, Comparative Traditions, Empirical Plausibility, and Interdisciplinary Corollaries**
 
 **By Jaime "Jim" Moraga, PhD**
