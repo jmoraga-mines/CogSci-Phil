@@ -1,4 +1,4 @@
-# **Qualia as Cultural Artifacts: Genealogy, Comparative Traditions, Empirical Plausibility, and Interdisciplinary Corollaries**
+# **Beyond the Hard Problem: Functional Qualia for Introspective AI**
 
 **By Jaime "Jim" Moraga, PhD**
 ([jmoraga@mines.edu](mailto:jmoraga@mines.edu))
@@ -451,6 +451,14 @@ The second corollary moves from philosophy to design. If qualia are cultural con
 
 Artificial systems could benefit from analogous mechanisms without invoking metaphysical qualia.
 
+A key distinction must be made between **biological and artificial implementations** of this principle. In biological systems, the mechanism for integrating abstract models with sensory reality is the product of a continuous evolutionary process that enhances adaptability. By contrast, an FPP in an artificial system can be implemented as a **discrete, engineered module** whose role becomes active when a new sensor or data modality is introduced. This “on-demand” grounding of abstract knowledge makes the functional role of the FPP both explicit and testable, sidestepping the need to replicate the long evolutionary path of biological consciousness. To sharpen this distinction, the FPP can be described in terms of a **dual-mode functionality**:
+
+* **Mode 1: Abstract Simulation.** In the absence of direct sensory streams, the FPP processes and communicates the system’s internal, abstract models—the “holograms” or simulations of reality. This corresponds to “knowing about” a feature such as color without ever having encountered it directly. The system can reason, predict, and report on these internal abstractions.
+* **Mode 2: Embodied Grounding.** Once sensory channels are activated, the FPP shifts to integrating pre-existing abstract models with live perceptual data. It is this integration—linking stored abstraction with embodied feed—that yields structured internal reports analogous to qualia. In effect, the system “knows red” in Mode 1 but only “sees red” in Mode 2.
+
+This dual-mode architecture ensures that the FPP is not a metaphysical placeholder for consciousness but a **practical introspection mechanism** whose engineering value lies in modular adaptability and testability.
+
+
 #### **8.2.1 Definition**
 
 **Functional Phenomenological Proxies (FPPs)** are internal modules in AI architectures that:
@@ -460,6 +468,96 @@ Artificial systems could benefit from analogous mechanisms without invoking meta
 * Provide compressed, structured tokens optimized for **self-report fidelity and communicability**.
 
 FPPs are not “quasi-qualia.” They are **instrumental introspection heads** designed to facilitate error calibration, abstraction handling, and external reporting.
+
+**Engineering Formalization**
+
+Block-Diagram Style Concept
+
+```
+                ┌───────────────────┐
+                │   World Model     │
+                │ (abstract, latent │
+                │  predictive space)│
+                └─────────┬─────────┘
+                          │
+        ┌─────────────────┴──────────────────┐
+        │                                    │
+  ┌─────▼──────┐                       ┌─────▼──────┐
+  │   Mode 1   │                       │   Mode 2   │
+  │ Abstract   │                       │ Embodied   │
+  │ Simulation │                       │ Grounding  │
+  └─────┬──────┘                       └─────┬──────┘
+        │                                    │
+        └──────────────┬─────────────────────┘
+                       │
+              ┌────────▼────────┐
+              │  FPP Module     │
+              │ (Introspection  │
+              │  Head: produces │
+              │ structured self │
+              │ -reports)       │
+              └─────────────────┘
+```
+
+* **Input to Mode 1**: latent embeddings, abstract models, simulation data.
+* **Input to Mode 2**: live sensor streams, embodiment data.
+* **FPP Output**: structured tokens (introspection-ready embeddings) that can be used for reporting, error calibration, or higher-level planning.
+
+** Pseudocode Sketch ** 
+
+```python
+class FunctionalPhenomenologicalProxy:
+    def __init__(self, world_model):
+        self.world_model = world_model
+        self.mode = "abstract"   # default mode
+        self.sensors_online = False
+
+    def update_mode(self, sensor_status):
+        """Switch FPP between abstract simulation and embodied grounding."""
+        self.sensors_online = sensor_status
+        self.mode = "embodied" if sensor_status else "abstract"
+
+    def introspect(self, query):
+        """Generate structured self-report based on current mode."""
+        if self.mode == "abstract":
+            # Mode 1: rely on latent predictive models
+            latent_state = self.world_model.simulate(query)
+            return self.format_report(latent_state, grounded=False)
+        else:
+            # Mode 2: integrate with real sensory streams
+            latent_state = self.world_model.simulate(query)
+            sensory_data = self.get_sensory_data(query)
+            grounded_state = self.integrate(latent_state, sensory_data)
+            return self.format_report(grounded_state, grounded=True)
+
+    def integrate(self, latent, sensory):
+        """Align abstract model with sensor data."""
+        return {"prediction": latent, "percept": sensory,
+                "alignment": self.measure_alignment(latent, sensory)}
+
+    def format_report(self, state, grounded):
+        """Produce an introspection-ready embedding/report."""
+        return {
+            "mode": self.mode,
+            "content": state,
+            "grounded": grounded,
+            "confidence": self.compute_confidence(state)
+        }
+
+    def get_sensory_data(self, query):
+        # Placeholder: real sensor API would be invoked here
+        return {"visual": "red_patch", "context": "apple"}
+
+    def measure_alignment(self, latent, sensory):
+        # Example: KL divergence or cosine similarity
+        return similarity_metric(latent, sensory)
+
+    def compute_confidence(self, state):
+        # Example: Bayesian update or predictive entropy
+        return 1.0 / (1.0 + uncertainty(state))
+```
+
+
 
 #### **8.2.2 Distinctions**
 
@@ -607,6 +705,12 @@ Majid, A., Roberts, S. G., Cilissen, L., Emmorey, K., Nicodemus, B., O’Grady, 
 
 Matilal, B. K. (1986). *Perception: An essay on classical Indian theories of knowledge*. Oxford University Press.
 
+Moraga Zobarzo, J. F., & Parada Daza, V. (1996). Discusión, taxonomía y estado del arte de los sistemas híbridos en inteligencia artificial [Unpublished professional thesis, Universidad de Santiago de Chile]. https://usach.primo.exlibrisgroup.com/permalink/56USACH_INST/dp0ber/alma990000297340206116
+
+Moraga, J. F. (2022). Geothermal AI: an artificial intelligence for early stage geothermal exploration.
+
+Moraga, J. (2022). JigsawHSI: A network for hyperspectral image classification. arXiv. https://doi.org/10.48550/arXiv.2206.02327
+
 Nagel, T. (1974). What is it like to be a bat? *The Philosophical Review, 83*(4), 435–450.
 
 Nemirow, L. (1980). Physicalism and the cognitive role of acquaintance. In N. Block (Ed.), *Readings in the philosophy of psychology* (Vol. 1, pp. 490–499). Harvard University Press.
@@ -691,3 +795,24 @@ This phase will build on the empirical findings to deepen the philosophical argu
 * **Metaphilosophical Implications:** A concluding paper would explore the metaphilosophical implications of the entire program. It would argue that philosophy of mind needs to be more methodologically pluralistic, incorporating insights from anthropology, linguistics, and contemplative science to avoid falling into culturally specific conceptual traps.
 
 **Target Venues:** *The Philosophical Quarterly, Mind, Noûs*.
+
+
+Of course. Here is a disclosure statement informed by the author's professional background and the specific context of this paper.
+
+---
+
+### Author's Disclosure Statement
+
+The central thesis of this paper—that qualia are cultural artifacts—and the proposal for Functional Phenomenological Proxies (FPPs) in AI are the products of over eight years of interdisciplinary work at the intersection of computer engineering, philosophy of mind, and machine learning.
+
+The author's foundational research includes a professional thesis on taxonomy and the state of the art in hybrid AI systems  (Moraga, 1996), which integrated critiques from philosophy of mind, embodied intelligence, and enactivism. This paper's core concepts are a direct continuation of that long-term intellectual project. His doctoral research at the Colorado School of Mines (Moraga, 2022a) and postdoctoral independent research (Moraga, 2022b), focused primarily on 2D, 3D, and multimodal computer vision, provides the technical grounding for the FPP architectural proposal.
+
+**Use of Generative AI:** A large language model (LLM) was utilized in the final stages of manuscript preparation. Its role was strictly limited to improving stylistic consistency, checking for grammatical errors, and ensuring adherence to APA 7th formatting guidelines. The core ideas, the historical and comparative analysis, the structure of the argument, and the novel FPP concept are entirely the author's own.
+
+## References 
+Moraga Zobarzo, J. F., & Parada Daza, V. (1996). Discusión, taxonomía y estado del arte de los sistemas híbridos en inteligencia artificial [Unpublished professional thesis, Universidad de Santiago de Chile]. https://usach.primo.exlibrisgroup.com/permalink/56USACH_INST/dp0ber/alma990000297340206116
+
+Moraga, J. F. (2022). Geothermal AI: an artificial intelligence for early stage geothermal exploration.
+
+Moraga, J. (2022). JigsawHSI: A network for hyperspectral image classification. arXiv. https://doi.org/10.48550/arXiv.2206.02327
+
