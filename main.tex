@@ -1,0 +1,557 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages for arXiv compatibility
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{abstract}
+\usepackage{etoolbox}
+
+% Page setup
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Title formatting
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Moraga}
+\lhead{Qualia as Cultural Artifacts}
+\rfoot{\thepage}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue,
+    pdftitle={Qualia as Cultural Artifacts: Genealogy, Comparative Traditions, Empirical Plausibility, and Interdisciplinary Corollaries},
+    pdfauthor={Jaime "Jim" Moraga},
+    pdfsubject={Philosophy of Mind},
+    pdfkeywords={qualia, consciousness, cultural artifacts, philosophy of mind}
+}
+
+% Custom commands
+\newcommand{\qualia}{\emph{qualia}}
+\newcommand{\hardproblem}{\emph{hard problem}}
+\newcommand{\mary}{\emph{Mary's Room}}
+\newcommand{\yogacara}{\emph{Yogācāra}}
+\newcommand{\nyaya}{\emph{Nyāya}}
+\newcommand{\fpp}{\emph{functional phenomenological proxies (FPPs)}}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+\begin{center}
+\vspace*{2cm}
+
+{\Huge\bfseries Qualia as Cultural Artifacts: Genealogy, Comparative Traditions, Empirical Plausibility, and Interdisciplinary Corollaries}
+
+\vspace{1cm}
+
+{\Large\bfseries Jaime "Jim" Moraga, PhD}
+
+\vspace{0.5cm}
+
+{\large \href{mailto:jmoraga@mines.edu}{jmoraga@mines.edu}}
+
+\vspace{0.3cm}
+
+{\large \href{https://orcid.org/0000-0003-4483-9900}{ORCID: 0000-0003-4483-9900}}
+
+\vspace{2cm}
+
+\begin{abstract}
+\doublespacing
+This paper argues that \qualia{}—the supposed ineffable, intrinsic features of conscious experience—are not universal givens of mind but are instead \textbf{cultural artifacts} born from a specific Western intellectual trajectory that privileges private subjectivity. I reconstruct a genealogy from Greek metaphysics, through Cartesian dualism and Lockean subjectivism, to the analytic codification of qualia and the "hard problem," exemplified by thought experiments like Mary's Room. This lineage is then contrasted with key non-Western traditions, including \textbf{Yogācāra Buddhism}, \textbf{Indian Nyāya realism}, and \textbf{Chinese philosophy}, which offer alternative ontologies where appearances are relational, cosmological, or epistemically direct, but never intrinsic qualia. The plausibility of this cultural-contingency hypothesis is supported by empirical evidence from cross-cultural perception, contemplative science, and historical linguistics.
+
+The paper re-frames the hard problem as a parochial artifact rather than a universal obstacle, motivating both philosophical reconsideration and an interdisciplinary research agenda. Two actionable corollaries are proposed: (1) \textbf{contemplative practice} as a method for shedding cultural bias in consciousness studies, and (2) \textbf{"functional phenomenological proxies" (FPPs)} as a design principle for artificial intelligence models that enhance internal predictive modeling engines, enabling extrapolation, integration of abstract frameworks, and structured self-report without metaphysical commitments.
+
+The result is a call for a more pluralistic and interdisciplinary science of consciousness.
+\end{abstract}
+
+\vfill
+
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+% Table of contents
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Few topics in philosophy of mind have proven as resistant to reduction or dissolution as the notion of \qualia{}—the ineffable "what-it's-like" features of conscious experience. From Nagel's (1974) famous bats to Jackson's (1982) Mary in the black-and-white room, the conviction persists that physical explanation leaves out something essential. This conviction underwrites Chalmers' (1995) framing of the "hard problem of consciousness": why should physical processing give rise to phenomenal experience at all?
+
+This paper challenges the assumption that such intuitions are human universals. Instead, I argue that \textbf{qualia realism and the hard problem are cultural artifacts}, products of a distinctive Western trajectory that progressively privatized and reified subjective experience. What analytic philosophers have treated as metaphysical givens may in fact be the contingent outcome of a history of thought stretching from Greek metaphysics to modern debates in analytic philosophy of mind.
+
+The argument proceeds in three stages:
+
+\begin{enumerate}
+\item \textbf{Genealogy:} A reconstruction of the Western trajectory from Aristotle, Plato, Descartes, and Locke to the analytic crystallization of qualia and the hard problem.
+\item \textbf{Comparative Counterpoints:} Surveying Buddhist, Chinese, Indian, and Islamic–Persian traditions that offer radically different ontologies of appearance.
+\item \textbf{Empirical Plausibility:} Evidence from cross-cultural psychology, meditation studies, and historical corpus analysis suggesting that intuitions about qualia vary across populations and contexts.
+\end{enumerate}
+
+Two corollaries extend the discussion:
+
+\begin{itemize}
+\item First, Yogācāra-inspired contemplative practices may provide a method for shedding cultural bias in consciousness research.
+\item Second, "functional phenomenological proxies" (FPPs) may serve as design heuristics for artificial intelligence models, offering structured internal states that support introspective reporting without metaphysical commitments.
+\end{itemize}
+
+The broader methodological claim is that \textbf{philosophy of mind must no longer treat qualia intuitions as universal evidence. Instead, they should be tested cross-culturally and historically, with empirical psychology and contemplative science as partners.} This shift reframes the hard problem from an intractable metaphysical puzzle into a culturally parochial artifact and opens the door to a more pluralistic, interdisciplinary science of consciousness.
+
+\section{The Western Genealogy of Qualia}
+
+The notion that there exist ineffable, intrinsic "raw feels" within consciousness—later crystallized as \qualia{}—did not emerge full-formed. It is the result of a trajectory in Western thought that progressively privatized and reified subjective appearance. This section reconstructs the key historical moves in that genealogy.
+
+\subsection{Aristotle: Form Without Matter}
+
+In \emph{De Anima}, Aristotle describes perception as the reception of the \emph{form} of an object without its \emph{matter}: the eye "takes on" the form of color, the ear of sound \cite{aristotle1984, sorabji1974, johansen1997}. While Aristotle did not posit anything like modern "qualia," he established a conceptual structure in which perception involves an \emph{internalized form} distinct from external substance.
+
+One might see \emph{phantasmata} (mental images) as proto-qualitative appearances, but Aristotle treated them as cognitive resources rather than ineffable objects of private theater. The groundwork for later subjectivization was laid, but no claim of intrinsic "what-it's-like-ness" had yet been made.
+
+\subsection{Plato: Suspicion of Appearances}
+
+Plato's \emph{Republic} famously depicts sensory perception as a shadow play in the cave allegory (514a–520a). The dominant Platonic inheritance was suspicion of appearances: sensory consciousness as deceptive, cognition and reason as access to truth \cite{burnyeat1990}.
+
+This distrust of the senses reinforced the tendency to treat appearances as secondary, unreliable, and ontologically inferior. Later Western thinkers inherited not just the suspicion, but also the habit of treating appearances as \emph{separable phenomena}—a precursor to the later idea that subjective impressions could be isolated and reified.
+
+\subsection{Descartes: Privatization of Subjectivity}
+
+In the \emph{Meditations} (1641/1984), Descartes' method of doubt suspends all sensory perception, leaving only the certainty of \emph{cogito ergo sum}. Consciousness becomes a private domain whose existence is guaranteed only by theological mediation \cite{cottingham1986, frankfurt1970}.
+
+The \emph{res cogitans} is an immaterial thinking substance, distinct from the extended world of \emph{res extensa}. This radical dualism inaugurated a model of subjectivity in which inner experience is irreducibly private. Here, the modern trajectory toward qualia realism finds one of its deepest roots: consciousness as a metaphysical interior.
+
+\subsection{Locke: Subjectivizing Secondary Qualities}
+
+Locke's \emph{Essay Concerning Human Understanding} (1690/1975) introduced the distinction between \textbf{primary qualities} (extension, motion, solidity) that exist in objects themselves, and \textbf{secondary qualities} (color, taste, sound) that exist only "in the perceiver." This move decisively \emph{mentalized appearances.}
+
+Aristotle's forms were properties received; Locke's secondary qualities were \emph{projections}. What analytic philosophers later called qualia—ineffable subjective appearances—can be traced to this conceptual shift. Locke's dualism between primary objectivity and secondary subjectivity provided the scaffolding for a private, interior realm of phenomenal impressions.
+
+\subsection{The Case of Mary and the Analytic Crystallization of Qualia}
+
+The modern analytic codification of qualia reaches its peak with thought experiments such as Jackson's Mary. In Jackson (1982), Mary is a color scientist confined to a black-and-white room who knows all physical facts about color vision. When she sees red for the first time, the intuition is that she gains new knowledge: what it is \emph{like} to see red.
+
+This "what-it's-like" has been taken to demonstrate that physical explanation leaves something out—an intrinsic, ineffable quale. From the perspective of the cultural-contingency thesis advanced here, however, the Mary thought experiment is not a universal cognitive intuition but a \textbf{conceptual artifact of the Western private-theater model of consciousness.}
+
+It presupposes that experience is a private, non-physical realm epistemically distinct from public, physical knowledge. The thought experiment is compelling precisely because it resonates with centuries of intellectual history—Plato's suspicion, Aristotle's forms, Descartes' \emph{res cogitans}, and Locke's subjectivized secondary qualities. On the account I defend, what Mary gains is not a metaphysical quale but a new form of \textbf{embodied, relational knowledge} \cite{lewis1990, nemirow1980}.
+
+\subsection{Interim Summary}
+
+The Western genealogy leading to the crystallization of qualia shows a progression:
+
+\begin{itemize}
+\item \textbf{Plato:} suspicion of appearances.
+\item \textbf{Aristotle:} forms internalized but not yet ineffable.
+\item \textbf{Descartes:} privatization of consciousness.
+\item \textbf{Locke:} projection of secondary qualities.
+\item \textbf{Analytic philosophy:} reification into qualia and the hard problem.
+\end{itemize}
+
+This trajectory makes intelligible the rise of qualia-talk in the West, but it should not be mistaken for a universal or inevitable feature of human thought.
+
+\section{Countertraditions Within the West}
+
+Although the dominant Western genealogy culminated in the codification of qualia as private, ineffable entities, countertraditions consistently challenged this view. These critiques often dissolved, rather than reinforced, the theater model of consciousness. Yet their institutional influence was limited, and they did not prevent the analytic crystallization of qualia.
+
+\subsection{William James: Radical Empiricism}
+
+James (1904) rejected the notion of consciousness as an inner arena populated by private mental objects. Instead, he proposed a \textbf{radical empiricism}, where "experience" is a continuous stream, composed of pure relational events. Consciousness, in this framing, is not a container of ineffable objects but a process of ongoing relations.
+
+However, James's pragmatist and process-oriented approach was marginalized by the rise of logical positivism and later analytic philosophy, both of which privileged formal logical analysis over phenomenological description. His rejection of qualia-like entities never became central to mainstream debates.
+
+\subsection{Husserl: Intentionality and Phenomenology}
+
+Husserl's phenomenology insisted that consciousness is always \textbf{intentional}—it is always \emph{consciousness of something} \cite{husserl1983}. Experiences are not private, ineffable tokens but intentional acts directed toward objects in the world.
+
+Phenomenology thus rejected the theater model, but because it evolved largely in the Continental tradition, its insights remained isolated from the Anglo-American analytic debates that codified qualia. The hard problem, framed in Cartesian and Lockean terms, dominated English-language philosophy even as phenomenology provided an alternative.
+
+\subsection{Sellars: The Myth of the Given}
+
+Sellars (1956/1997) offered a devastating critique of the very idea of \textbf{raw feels} as epistemically foundational. He argued that all perceptual content is conceptually mediated, embedded in what he called the \textbf{space of reasons}. The "Myth of the Given" dissolved the idea that there are intrinsic, pre-conceptual experiences that serve as ultimate data.
+
+Yet despite its influence, analytic philosophy of mind continued to treat qualia as metaphysical givens. Sellars's critique was absorbed within epistemology and philosophy of science but never fully extinguished qualia realism.
+
+\subsection{Ryle: Category Mistakes and the Ghost in the Machine}
+
+Ryle (1949) attacked the Cartesian model directly, describing the \textbf{"ghost in the machine"} as a category mistake. To treat consciousness as a private theater with ineffable contents was, on his account, to misclassify the grammar of mental predicates.
+
+Ryle's functionalist leanings foreshadowed later cognitive science, but his behaviorism was eclipsed by the cognitive revolution of the 1950s and 1960s, which re-entrenched representationalist assumptions. The category mistake critique did not prevent the later reification of qualia in analytic debates.
+
+\subsection{Why Countertraditions Lost Traction}
+
+These countertraditions—James's radical empiricism, Husserl's intentionality, Sellars's critique of the Given, Ryle's attack on Cartesian dualism—offered powerful critiques of qualia realism. However, they were systematically sidelined:
+
+\begin{itemize}
+\item \textbf{Institutionally} (Continental vs. analytic separation).
+\item \textbf{Methodologically} (phenomenology and pragmatism lost to formal analysis).
+\item \textbf{Cognitively} (the Cartesian–Lockean trajectory resonated with entrenched intuitions about private interiority).
+\end{itemize}
+
+The analytic mainstream thus continued toward the codification of qualia and the hard problem, even though Western philosophy contained robust internal critiques.
+
+\subsection{Interim Summary}
+
+Even within Western philosophy, the idea that consciousness is a private theater populated by ineffable qualia has been contested. Yet these contestations were sidelined, marginalized, or institutionally isolated. The genealogy of qualia is therefore not only culturally contingent (in comparison with non-Western traditions) but also \textbf{historically contingent within the West itself.}
+
+\section{Cross-Cultural Counterpoints: A Deeper Dive}
+
+The Western genealogy is not universal. Comparative traditions articulate alternative ontologies of appearance, where the notion of intrinsic qualia has no purchase. This section surveys Buddhist, Indian, Chinese, and Islamic–Persian thought, with attention to intra-tradition diversity and debates.
+
+\subsection{Case Study 1: Yogācāra Buddhism and the Dissolution of Intrinsic Essence}
+
+Yogācāra developed a sophisticated model of consciousness organized into eight layers, culminating in the \textbf{storehouse consciousness (\emph{ālaya-vijñāna})}. For Yogācāra, what analytic philosophers call "qualia" are merely \textbf{projections (\emph{ākāra})} that arise from karmic seeds within the \emph{ālaya-vijñāna}. While experientially real, they are \textbf{empty of intrinsic essence (\emph{svabhāva})} \cite{lusthaus2002, garfield2015}.
+
+This emptiness is not a denial of phenomenality, but a rejection of intrinsic, self-sufficient essence. The lack of \emph{svabhāva} for any mental phenomenon, including sensory appearances, means that the idea of a private, non-relational quale is ontologically incoherent.
+
+\footnote{It must be noted that \textbf{Madhyamaka Buddhism} (Nāgārjuna and successors) takes a different approach, radicalizing emptiness to deny intrinsic essence in all phenomena, including consciousness itself. While distinct from Yogācāra, both schools converge in rejecting intrinsic qualia as metaphysically basic.}
+
+\subsection{Case Study 2: Indian Nyāya Realism and the Relationality of Appearance}
+
+For Nyāya philosophers, perception (\emph{pratyakṣa}) is a \textbf{direct, veridical contact} with real objects \cite{matilal1986, phillips1995}. Consciousness is not a private theater populated by ineffable qualities but a reliable cognitive relation to external entities.
+
+A Nyāya philosopher would reject Locke's distinction between primary and secondary qualities. The property of being red is a real quality (\emph{guṇa}) of the apple itself, not a subjective projection. To see a red apple is to be in a veridical cognitive relation with a red object. Nyāya realism thus denies the very premise that motivates qualia realism.
+
+\footnote{Nyāya schools were not monolithic. Internal debates concerned the scope of perceptual error and the relation between perception and inference. However, the \textbf{general rejection of private, ineffable qualia} remains a robust feature of Nyāya epistemology.}
+
+\subsection{Chinese Philosophy: Perspectivalism and Relationality}
+
+Chinese thought largely lacks a concept of a private, substance-like mind. Instead, the \textbf{xin (heart-mind)} is understood relationally, embedded in world and society. Experience is not privatized but enacted through dynamic interaction.
+
+The Daoist \textbf{Butterfly Dream} (Zhuangzi, 2nd–3rd century BCE) illustrates perspectivalism:
+
+\begin{quote}
+"He did not know whether he was a man dreaming he was a butterfly, or a butterfly dreaming he was a man."
+\end{quote}
+
+Here, appearances are perspectival and shifting, not intrinsic qualia. Concepts such as \textbf{Dao} (cosmic process) and \textbf{Qi} (vital force) emphasize relational and processual ontology \cite{hansen1992, ames2001}.
+
+\footnote{\textbf{Confucian traditions} emphasized social-relational aspects of mind more than cosmological process. Daoism leaned toward perspectival fluidity, Confucianism toward moral cultivation of relational mind. Both lacked the conceptual machinery that would make the "hard problem" a coherent puzzle.}
+
+\subsection{Islamic–Persian Traditions: Self-Awareness vs. Ineffable Qualia}
+
+The "Flying Man" thought experiment of the Persian polymath \textbf{Avicenna} (Ibn Sīnā, 11th c.) is a counterpoint to Descartes. Avicenna imagines a person suspended in a void, deprived of all sensory input. This "flying man" would still be immediately aware of his own existence \cite{adamson2016}.
+
+While Avicenna uses this to argue for the immaterial soul, the focus is on \textbf{self-awareness}, not ineffable qualia. Unlike Descartes, he does not posit a private theater of sensory impressions. Instead, Avicenna distinguishes awareness of existence from sensory qualities, sidestepping the later qualia problematic.
+
+\subsection{Interim Summary}
+
+Cross-cultural comparison reveals at least three alternative ontologies:
+
+\begin{itemize}
+\item \textbf{Yogācāra:} appearances are projections empty of intrinsic essence.
+\item \textbf{Nyāya realism:} appearances are direct, veridical qualities of objects.
+\item \textbf{Chinese perspectivalism:} appearances are relational, perspectival flows of \emph{qi} and \emph{xin}.
+\item \textbf{Avicenna's Islamic philosophy:} self-awareness without ineffable sensory tokens.
+\end{itemize}
+
+None of these traditions articulate a notion of intrinsic qualia. This suggests that qualia realism is a \textbf{parochial Western artifact}, not a universal feature of human cognition.
+
+\section{The Scientific Convergence: Deflation and Re-enchantment}
+
+Contemporary cognitive science increasingly sidesteps or deflates the notion of intrinsic qualia. Instead, it models consciousness through computational, embodied, and predictive mechanisms. In some cases, this converges with non-Western traditions (e.g., Yogācāra's non-intrinsicism, Nyāya realism, Chinese perspectivalism), though without their soteriological or cosmological commitments. In other cases, certain frameworks partially revive intrinsicist language, demonstrating the persistence of cultural intuitions.
+
+\subsection{Illusionism and the Deflationary Turn}
+
+Contemporary illusionists such as Dennett (1991) and Frankish (2016) argue that qualia are \textbf{introspective "user illusions"}: constructed models of experience rather than intrinsic features. Consciousness is explained as a set of functional and representational processes, and the "raw feels" that introspection reports are reconstructions.
+
+This deflationary account resonates with Yogācāra Buddhism, where appearances lack \emph{svabhāva}. The convergence suggests that denying intrinsic essence is not limited to ancient traditions but is echoed by empirical science. Yet the aims differ: illusionism seeks metaphysical parsimony; Yogācāra, experiential transformation.
+
+\subsection{Enactivism and Embodied Cognition}
+
+Enactivist theories \cite{maturana1991, thompson2007} propose that consciousness is not the representation of internal contents but the \textbf{enactment of a world} through embodied interaction.
+
+This framework rejects inner, intrinsic qualia in favor of relational dynamics: an organism brings forth a meaningful world through its sensorimotor coupling. This stance aligns closely with both Chinese perspectivalism (interaction and relationality) and Husserlian intentionality (consciousness is always \emph{of} something).
+
+\subsection{Global Workspace Theory (GWT)}
+
+Global Workspace Theory \cite{baars1997, dehaene2014} models consciousness as the \textbf{global broadcasting of information} across specialized neural modules. What becomes conscious is what is made globally available for action and report.
+
+Crucially, this framework does not posit ineffable qualia. Instead, it explains reportability and introspection through computational accessibility. The hard problem is bypassed, not solved, by dissolving the need for intrinsic phenomenal properties.
+
+\subsection{Predictive Processing and Bayesian Brain Models}
+
+Predictive processing accounts \cite{clark2013, friston2018} describe the brain as a \textbf{generative model} that minimizes prediction error. Perception is modeled as inference, not as the reception of raw qualitative contents.
+
+In this framework, phenomenal experience is reframed as a hierarchical process of error minimization and model updating. There is no need to posit intrinsic qualia: what we call "phenomenal character" is the \textbf{inference dynamics of generative models}.
+
+\subsection{Integrated Information Theory (IIT)}
+
+Integrated Information Theory \cite{tononi2008, koch2015} offers a striking contrast. Unlike deflationary models, IIT explicitly ties consciousness to a system's \textbf{intrinsic causal structure}, quantified by integrated information ($\Phi$).
+
+Here, IIT does employ \textbf{intrinsicist language}, treating consciousness as an irreducible property of certain physical structures. This aligns with the Western tradition of attributing intrinsic status to phenomenality. However, IIT also reframes the discourse: rather than positing ineffable qualia as metaphysical givens, it attempts to \textbf{mathematically model consciousness as a structural property}.
+
+In this sense, IIT occupies a middle ground:
+
+\begin{itemize}
+\item On one hand, it risks reinforcing the intuition that consciousness is fundamentally intrinsic.
+\item On the other hand, it grounds that intuition in testable causal models, opening space for empirical challenge and debate \cite{block1995, kriegel2009}.
+\end{itemize}
+
+Rather than caricaturing IIT as a mere revival of qualia realism, it is more accurate to say that IIT demonstrates the \textbf{gravitational pull of intrinsicist intuitions} in Western thought, while simultaneously translating them into a novel, scientific idiom.
+
+\subsection{Interim Summary}
+
+Cognitive science today demonstrates three trajectories:
+
+\begin{enumerate}
+\item \textbf{Deflationary (Illusionism, Predictive Processing, GWT):} dissolve intrinsic qualia into functions, reports, and inferences.
+\item \textbf{Relational (Enactivism):} emphasize world-enactment and processual relationality, resonant with non-Western traditions.
+\item \textbf{Intrinsicist Revival (IIT):} articulate consciousness as an intrinsic property of integrated structures, bridging cultural intuitions with mathematical modeling.
+\end{enumerate}
+
+This diversity underscores that scientific theories, like philosophical traditions, are shaped by \textbf{cultural attractors and conceptual histories}. The persistence of intrinsicist idioms in IIT shows that Western cultural intuitions are not easily dissolved, even in rigorously scientific frameworks.
+
+\section{Empirical Plausibility: Beyond the Anecdote}
+
+The cultural-contingency hypothesis gains plausibility from empirical findings showing that perception and introspection vary across populations and contexts. While philosophical debates often assume \qualia{} to be universal, empirical psychology, linguistics, and contemplative science suggest otherwise.
+
+\subsection{Cross-Cultural \& Linguistic Variation in Perception}
+
+\textbf{Color:} The Russian language distinguishes between light and dark blue (\emph{goluboy} vs. \emph{siniy}). Russian speakers show faster discrimination in this range compared to English speakers \cite{winawer2007}. Similarly, research on the Berinmo (Papua New Guinea) and Himba (Namibia) shows color categories diverging significantly from English, with measurable effects on memory and discrimination \cite{roberson2005}.
+
+\textbf{Olfaction:} Majid et al. (2018) report that Jahai speakers (Malay Peninsula) possess a rich odor vocabulary, enabling consistent naming and discrimination far beyond English speakers, who struggle to name smells. This suggests that even so-called "basic qualia" like odor qualities are not stable, intrinsic universals.
+
+\textbf{Pain and Touch:} Ethnographic and clinical work shows cultural variation in pain lexicons, tactile metaphors, and embodied reports. For example, Mediterranean pain vocabularies often emphasize "burning" qualities, while Northern European ones emphasize "pressure" or "heaviness" \cite{hardin1997}. These variations suggest that even "raw feels" like pain are culturally mediated.
+
+\subsection{Interoception and Trainability}
+
+Training in heartbeat detection and other interoceptive tasks has been shown to alter subjective awareness of bodily states. Far from being fixed givens, \textbf{interoceptive "what-it's-like" experiences} are plastic, shaped by skill and attention. This is consistent with work on bodily awareness showing wide individual and cultural variability.
+
+\subsection{Contemplative Science and Phenomenal Mutability}
+
+Meditation research demonstrates that phenomenology itself is \textbf{mutable through training}:
+
+\begin{itemize}
+\item Lutz, Dunne, \& Davidson (2007) show that sustained mindfulness and compassion practices alter attentional styles and reduce subject–object dualism.
+\item Lindahl et al. (2017) document how meditation can loosen the grip of intrinsicist intuitions, producing altered self–world relations.
+\end{itemize}
+
+These findings suggest that \textbf{phenomenal structure is not immutable}, and that what feels like intrinsic "raw feels" can shift with practice. This strongly supports the thesis that qualia realism is not universal but contingent.
+
+\subsection{WEIRD Psychology}
+
+Henrich, Heine, \& Norenzayan (2010) show that Western, Educated, Industrialized, Rich, and Democratic (WEIRD) populations are outliers across perceptual and cognitive tasks. Many assumptions of philosophy of mind—including qualia intuitions—are likely shaped by WEIRD-specific cognitive habits. Treating them as universals is methodologically unsound.
+
+\subsection{Experimental Philosophy and Replication Issues}
+
+Experimental philosophy has documented variation in philosophical intuitions across cultures and populations \cite{weinberg2001, stich2003}. For example, East Asian participants often diverge from Western participants in epistemic and free-will intuitions.
+
+However, \textbf{replication crises} in psychology and experimental philosophy urge caution. Machery et al. (2015) show that some reported differences in epistemic intuitions failed to replicate. This does not invalidate the cultural-contingency hypothesis but demonstrates that results must be treated as \textbf{tentative evidence within a research program}, not as settled conclusions.
+
+\subsection{Framing as a Research Program}
+
+Taken together, the evidence suggests that intuitions about qualia vary across cultures, languages, training regimes, and subpopulations. The \textbf{cultural-contingency hypothesis} is therefore empirically plausible.
+
+Yet because replication and methodological limitations exist, the right framing is not "qualia realism is false" but:
+
+\begin{quote}
+\textbf{Qualia realism is a parochial Western artifact, and the universality of qualia intuitions is an open empirical question to be tested.}
+\end{quote}
+
+This motivates a \textbf{cross-cultural, cross-disciplinary research program}:
+
+\begin{enumerate}
+\item \textbf{Cross-cultural Mary experiments:} Administer Mary-style scenarios to WEIRD vs. non-WEIRD vs. contemplative populations.
+\item \textbf{Multimodal studies:} Extend beyond color to olfaction, pain, touch, and interoception.
+\item \textbf{Longitudinal training studies:} Measure changes in qualia intuitions before and after contemplative or interoceptive training.
+\item \textbf{Corpus analysis:} Trace historical shifts in language use (e.g., references to "experience" and "raw feel" in philosophical and literary texts).
+\end{enumerate}
+
+\subsection{Interim Summary}
+
+Empirical findings across color, olfaction, pain, interoception, and contemplative science converge on the view that "what-it's-like" reports are \textbf{variable, trainable, and culturally structured}. The replication crisis in psychology urges caution but does not undermine the central insight: \textbf{qualia realism cannot be assumed as a universal feature of human minds.}
+
+Instead, it should be studied as a \textbf{culturally situated phenomenon}—making the hard problem a research artifact rather than a metaphysical riddle.
+
+\section{Engaging Competing Theories}
+
+The cultural-contingency hypothesis must be situated against mainstream analytic theories that aim to dissolve or explain the Mary problem and the ontology of qualia. This section engages briefly with the four dominant camps: the \textbf{Ability Hypothesis}, \textbf{Phenomenal Concepts strategies}, \textbf{Representationalism/Higher-Order Thought theories}, and \textbf{Panpsychism/Neutral Monism}.
+
+\subsection{The Ability Hypothesis}
+
+Lewis (1990) and Nemirow (1980) argue that Mary gains no new propositional fact upon leaving the black-and-white room; she acquires a new ability or know-how—for example, the ability to imagine or recognize red.
+
+My account converges with this in part. Mary gains embodied, relational knowledge: a new \textbf{sensorimotor coupling} that allows her to engage the world differently. But the cultural-contingency thesis adds a deeper claim: the very \emph{intuition} that Mary is missing a fact reflects Western historical priors about private experience. In contexts where subjective impressions are not reified into private qualia, the thought experiment may lack its intuitive pull.
+
+\subsection{Phenomenal Concepts Strategies}
+
+Phenomenal Concepts theorists \cite{loar1990, levine2001, papineau2002} argue that the epistemic gap arises because we deploy \textbf{special concepts} to access phenomenal states, making it seem as though a new fact is revealed. The gap is conceptual, not ontological.
+
+The cultural-contingency thesis is orthogonal: rather than explaining away the gap \emph{within} the analytic framework, I ask \textbf{why that framework arose at all}. Why do Western philosophers find the gap compelling in the first place? Comparative traditions show that not all conceptual frameworks even pose the question.
+
+\subsection{Representationalism and Higher-Order Theories}
+
+Representationalism \cite{tye1995, dretske1995} holds that phenomenal character is identical to representational content. Higher-Order Thought theories \cite{rosenthal2005, lau2011} propose that consciousness consists in a mental state being the object of a higher-order representation.
+
+Both approaches dissolve qualia into representational relations or higher-order monitoring. This is compatible with my thesis insofar as both reject ineffable qualia. But they remain \textbf{parochial in scope}: they attempt to solve a puzzle that only exists because Western philosophy framed consciousness as a private theater.
+
+\subsection{Panpsychism and Neutral Monism}
+
+Panpsychists \cite{goff2017} and neutral monists \cite{strawson2008} address the hard problem by treating consciousness as fundamental or as the intrinsic nature of physical reality. While these approaches avoid dualism, they preserve the assumption that \textbf{ineffable feels are bedrock data} demanding metaphysical accommodation.
+
+The cultural-contingency thesis dissolves that assumption itself: if the very \emph{intuition} of ineffable feels is parochial, then panpsychism and monism are answers to a question that need not be universally asked.
+
+\subsection{Interim Summary}
+
+Engaging with competing theories clarifies the distinctive contribution of the cultural-contingency approach. Where mainstream theories attempt to resolve the gap, I question why the gap was felt to exist at all. This reframing is not a rival solution but a genealogical and comparative critique: qualia realism and the hard problem are not human universals, but artifacts of cultural history. Table 1 summarizes these competing approaches and their relationship to the cultural-contingency hypothesis.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{4cm}|}
+\hline
+\textbf{Theory / Strategy} & \textbf{What Mary Gains} & \textbf{Standard Aim} & \textbf{Cultural-Contingency Reply} \\
+\hline
+\textbf{Ability Hypothesis} (Lewis 1990; Nemirow 1980) & New know-how (e.g., imagining/recognizing red) & Preserve physicalism by reclassifying newness as ability, not fact & Mary gains embodied-relational coupling, but the \emph{intuition of a missing fact} is itself culturally contingent. \\
+\hline
+\textbf{Phenomenal Concepts} (Loar 1990; Levine 2001; Papineau 2002) & Access via special concepts & Explain epistemic gap without dualism & Why is the gap felt compelling at all? The framework is Western-genealogical, not universal. \\
+\hline
+\textbf{Representationalism/HOT} (Tye 1995; Rosenthal 2005; Lau \& Rosenthal 2011) & Phenomenal character = representational content / higher-order monitoring & Deflate qualia into representational functions & Compatible with deflation, but still presupposes Western qualia-talk as starting point. \\
+\hline
+\textbf{Panpsychism/Neutral Monism} (Strawson 2008; Goff 2017) & Consciousness as fundamental/intrinsic & Dissolve hard problem by universalizing consciousness & Still treats ineffable feels as basic data; cultural-contingency thesis dissolves the starting premise. \\
+\hline
+\end{tabular}
+\caption{Comparison of competing theories and their relationship to the cultural-contingency hypothesis}
+\end{table}
+
+\section{Corollaries: Actionable Agendas}
+
+The philosophical re-framing of qualia as cultural artifacts has direct implications for both consciousness research and artificial intelligence. This section develops two corollaries: first, the use of \textbf{contemplative practice as a debiasing tool}, and second, the design of \textbf{functional phenomenological proxies (FPPs)} as an AI architecture principle.
+
+\subsection{Corollary 1: Contemplative Practice as a Debiasing Tool}
+
+If qualia realism is a parochial artifact rather than a human universal, one implication is methodological: \textbf{philosophical intuitions themselves can be reshaped.}
+
+\textbf{Neuroscientific Evidence:} Research in contemplative neuroscience indicates that sustained meditation alters attentional styles, reduces the strength of subject–object dualism, and loosens conviction in "raw feel" intuitions \cite{lutz2007, lindahl2017}.
+
+\textbf{Cross-Cultural Implication:} Yogācāra-inspired practices already frame appearances as projections empty of intrinsic essence. Comparative traditions show that contemplative expertise can transform phenomenological structure.
+
+\textbf{Experimental Proposal:} Cross-cultural research could stratify participants by contemplative training and cultural background:
+
+\begin{itemize}
+\item \textbf{WEIRD novices} (likely to find Mary's argument compelling).
+\item \textbf{Non-WEIRD participants} (with different cultural frameworks).
+\item \textbf{Experienced contemplatives} (with altered intuitions).
+\end{itemize}
+
+Researchers could test whether intuitions about Mary's Room or "what-it's-like" experiences vary systematically.
+
+\textbf{Result:} If intuition profiles diverge, this would strongly support the thesis that the "hard problem" is a \textbf{culturally and psychologically contingent artifact}.
+
+\subsection{Corollary 2: Functional Phenomenological Proxies (FPPs) in AI}
+
+The second corollary moves from philosophy to design. If qualia are cultural constructs rather than metaphysical givens, they may nonetheless have \textbf{functional analogues} in cognition. Humans experience "raw feels" that, while not metaphysically intrinsic, serve \textbf{instrumental purposes}:
+
+\begin{itemize}
+\item self-monitoring,
+\item error detection,
+\item abstraction integration,
+\item and communicability of internal states.
+\end{itemize}
+
+Artificial systems could benefit from analogous mechanisms without invoking metaphysical qualia.
+
+\subsubsection{Definition}
+
+\textbf{Functional Phenomenological Proxies (FPPs)} are internal modules in AI architectures that:
+
+\begin{itemize}
+\item Enhance predictive and world-model engines by producing \textbf{introspection-ready embeddings}.
+\item Improve \textbf{extrapolation and integration of abstract frameworks}.
+\item Provide compressed, structured tokens optimized for \textbf{self-report fidelity and communicability}.
+\end{itemize}
+
+FPPs are not "quasi-qualia." They are \textbf{instrumental introspection heads} designed to facilitate error calibration, abstraction handling, and external reporting.
+
+\subsubsection{Distinctions}
+
+\textbf{From JEPA/World Models:} Joint-Embedding Predictive Architectures \cite{assran2023, bardes2024, lecun2022} compress perception-action embeddings. FPPs add explicit \textbf{introspection channels} that optimize for fidelity of self-reports, not just prediction.
+
+\textbf{From Predictive Processing:} Predictive coding minimizes error \cite{clark2013, friston2018}. FPPs supplement by mapping latent states into \textbf{structured introspection outputs}.
+
+\textbf{From GWT:} Global Workspace Theory \cite{baars1997, dehaene2014} explains broadcasting for accessibility. FPPs go further by adding calibration layers that enhance \textbf{reportability and abstraction integration}.
+
+\subsubsection{Mary-in-silico Test}
+
+An AI trained only in simulation (a "black-and-white room") could be given embodiment. Researchers would measure the difference in:
+
+\begin{enumerate}
+\item discrimination and recognition accuracy,
+\item policy adaptation, and
+\item novelty and structure of \textbf{self-reports}.
+\end{enumerate}
+
+Disabling the FPP layer in ablation studies would demonstrate its role in producing structured introspection, sharpening the analogy to Mary: what the system gains is not metaphysical qualia, but new \textbf{embodied, relational knowledge}.
+
+\subsubsection{Anchoring in AI Research}
+
+\textbf{Consciousness Prior (Bengio, 2017):} FPPs align with proposals for higher-level latent factors guiding abstraction and generalization.
+
+\textbf{Cognitive Architectures (Lake et al., 2017):} FPPs contribute to the design of machines that learn and think like people by adding explicit self-modeling layers.
+
+\textbf{Mechanistic Interpretability (Olah et al., 2020s):} FPPs provide structured introspection outputs that could improve interpretability, allowing alignment researchers to see how models represent internal states.
+
+\subsubsection{Safety Note}
+
+Following Butlin et al. (2023), FPPs must be treated as \textbf{functional constructs}, not as evidence of metaphysical consciousness. Their role is practical: enhancing extrapolation, abstraction integration, and self-report calibration.
+
+\subsection{Interim Summary}
+
+The two corollaries extend the cultural-contingency thesis into action:
+
+\begin{enumerate}
+\item \textbf{Contemplative practice} can be used to debias philosophical intuitions and empirically test whether the hard problem is parochial.
+\item \textbf{FPPs in AI} provide a design principle for introspection-ready architectures, enhancing functionality without invoking metaphysical qualia.
+\end{enumerate}
+
+Both demonstrate how the reframing of qualia as cultural artifacts can reshape research programs in philosophy, cognitive science, and artificial intelligence.
+
+\section{Conclusion}
+
+Qualia realism and the hard problem of consciousness emerge not from the universal nature of mind, but from a specific Western genealogy. From Plato's suspicion of appearances to Locke's subjectivizing of secondary qualities, and from Descartes' privatization of consciousness to the analytic codification of qualia, the idea of ineffable private feels is revealed as a \textbf{cultural artifact} rather than a universal datum.
+
+Comparative traditions—Yogācāra's projections without essence, Nyāya's direct realism, Chinese perspectivalism, and Avicenna's self-awareness without qualia—demonstrate that many coherent ontologies of mind exist without invoking intrinsic phenomenal properties. Contemporary cognitive science further deflates or bypasses qualia through illusionism, enactivism, predictive processing, and global workspace theory, while frameworks like IIT show the persistence of intrinsicist attractors in scientific idioms.
+
+Empirical evidence from cross-cultural psychology, linguistics, contemplative science, and interoception indicates that what analytic philosophy treats as universal intuitions are in fact variable, trainable, and culturally structured. Replication debates in experimental philosophy remind us that these findings must be framed as a \textbf{research program} rather than a final conclusion.
+
+Finally, two corollaries extend this reframing: contemplative practice can serve as a tool to \textbf{debias intuitions and empirically test cultural contingency}, and AI design can leverage \textbf{functional phenomenological proxies (FPPs)} to enhance predictive modeling, abstraction integration, and introspective reporting without invoking metaphysical qualia.
+
+The broader claim is that philosophy of mind must move beyond parochial universals toward a \textbf{pluralistic, interdisciplinary science of consciousness}. By reframing qualia as cultural artifacts, we transform the "hard problem" from an intractable metaphysical riddle into a contingent historical puzzle—one that can be dissolved, reimagined, and tested across cultures, disciplines, and technologies.
+
+% Bibliography
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document} 
