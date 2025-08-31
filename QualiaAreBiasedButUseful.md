@@ -503,7 +503,8 @@ Block-Diagram Style Concept
 * **Input to Mode 2**: live sensor streams, embodiment data.
 * **FPP Output**: structured tokens (introspection-ready embeddings) that can be used for reporting, error calibration, or higher-level planning.
 
-** Pseudocode Sketch ** 
+
+**Pseudocode Sketch** 
 
 ```python
 class FunctionalPhenomenologicalProxy:
