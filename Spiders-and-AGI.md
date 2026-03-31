@@ -6,7 +6,7 @@
 
 ---
 
-Google DeepMind recently published "Measuring Progress Toward AGI: A Cognitive Taxonomy," proposing ten cognitive faculties — perception, reasoning, memory, metacognition, and so on — as the definitive scorecard for artificial general intelligence. The framework is rigorous within its own boundaries. It is also profoundly incomplete — and the gaps it exhibits are not new. Many of them were already well-understood in the mid-1990s.
+Google DeepMind recently published ["Measuring Progress Toward AGI: A Cognitive Taxonomy,"](https://goo.gle/4uPx5S2) proposing ten cognitive faculties — perception, reasoning, memory, metacognition, and so on — as the definitive scorecard for artificial general intelligence. The framework is rigorous within its own boundaries. It is also profoundly incomplete — and the gaps it exhibits are not new. Many of them were already well-understood in the mid-1990s.
 
 In my 1996 thesis on hybrid systems for AI at the Universidad de Santiago de Chile, I addressed several of these same questions: the need for embodied intelligence and external agency, the limitations of *g* and even of Gardner's multiple intelligences framework, and the biological foundations of cognition — particularly Maturana and Varela's conception of living beings as autopoietic cognitive systems. These were not exotic ideas then. They were central to the discourse in cognitive science, cybernetics, and the Chilean school of biology of cognition. That a major AI lab's flagship framework for measuring general intelligence still hasn't absorbed them three decades later is worth examining.
 
