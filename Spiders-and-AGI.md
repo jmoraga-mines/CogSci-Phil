@@ -2,7 +2,7 @@
 
 **Why Google DeepMind's Cognitive Taxonomy Repeats Mistakes We Identified Thirty Years Ago**
 
-*Jaime F. Moraga, PhD — Applied AI Leader, Accenture/DataStories*
+*Jaime F. Moraga, PhD — Applied AI Leader, Accenture/Partners in Performance/DataStories*
 
 ---
 
